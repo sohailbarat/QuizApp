@@ -19,4 +19,4 @@ HTML,Canvas, CSS, JavaScript, Bootstrap
 Create a Quiz Application
 
 ## Visit:
-[GoblinGO](https://aadeshnichite.github.io/CanvasGame/)
+[QuizApp]( https://aadeshnichite.github.io/QuizApp/)
