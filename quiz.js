@@ -45,7 +45,7 @@ count++;
 
 function process()
 {
-    let selectedValue=document.getElementById("value1").value;
+    let selectedValue=document.getElementById("value1").textContent;
     console.log(selectedValue);
 
     let ans = sessionStorage.getItem("ans");
@@ -70,7 +70,7 @@ function process()
 }
 function process1()
 {
-    let selectedValue=document.getElementById("value2").value;
+    let selectedValue=document.getElementById("value2").textContent;
     console.log(selectedValue);
 
     let ans = sessionStorage.getItem("ans");
@@ -95,7 +95,7 @@ function process1()
 }
 function process2()
 {
-    let selectedValue=document.getElementById("value3").value;
+    let selectedValue=document.getElementById("value3").textContent;
     console.log(selectedValue);
 
     let ans = sessionStorage.getItem("ans");
@@ -120,7 +120,7 @@ function process2()
 }
 function process3()
 {
-    let selectedValue=document.getElementById("value4").value;
+    let selectedValue=document.getElementById("value4").textContent;
     console.log(selectedValue);
 
     let ans = sessionStorage.getItem("ans");

@@ -49,16 +49,6 @@
 		],
 		"answer": "Mahatma Gandhi"
 	},
-	"q6": {
-		"question": "Which is the financial capital of Maharashtra?",
-		"options": [
-			"Mumbai",
-			"Pune",
-			"Nagapur",
-			"Satara"
-		],
-		"answer": "Mumbai"
-	},
 	"q7": {
 		"question": "Who is the Prime Minister of India?",
 		"options": [
