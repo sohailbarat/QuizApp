@@ -19,8 +19,10 @@ Name:Quiz Application -->
             <div class="container-fluid">
                     <div class="row">
                             <div class="col-sm r2">  
+                             
                                 <div class="data">  
                                     <div>
+                                        <p id="timer">02:20</p>
                                         <text id="QuestionNo">Question <p id="queno"> 1</p> of 10</text>
                                     </div>
                                     <div>
@@ -28,12 +30,11 @@ Name:Quiz Application -->
                                     </div>
                                     <div>
                                         <div class="options" id="answer-select">
-                                            <div class="option1"><button id="value1" class="btn" onclick="process();">Mumbai</button></div>
-                                            <div class="option1"><button id="value2" class="btn" onclick="process();">Delhi</button></div>
-                                            <div class="option1"><button id="value3" class="btn" onclick="process();">Pune</button></div>
-                                            <div class="option1"> <button id="value4" class="btn" onclick="process();">Panaji</button></div>
+                                            <div class="option1"><button id="value1" class="btn" onclick="process(value1);">Mumbai</button></div>
+                                            <div class="option1"><button id="value2" class="btn" onclick="process(value2);">Delhi</button></div>
+                                            <div class="option1"><button id="value3" class="btn" onclick="process(value3);">Pune</button></div>
+                                            <div class="option1"> <button id="value4" class="btn" onclick="process(value4);">Panaji</button></div>
                                         </div>
-                                        
                                     </div>
                                     <div>
                                     <a href="index2.html" id="link"><button type="button" class="Startbtn">Submit</button></a>
