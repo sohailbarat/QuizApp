@@ -1,4 +1,4 @@
-let COUNT=1;
+let COUNT=0;
 $(function(){
     getJSON();
     result();
@@ -21,12 +21,14 @@ $(function(){
     });
 }
 function getFunction(){
-    if(COUNT<=10)
+
+    if(COUNT<=9)
     {
         const keys = Object.values(array);
         console.log(array);
-        let randIndex = Math.floor(Math.round(Math.random()*7));
-        if(randIndex==0)
+        let randIndex = Math.floor(Math.round(Math.random()*10));
+        console.log(randIndex);
+        if(randIndex == null)
         {
             randIndex=1;
         }
@@ -51,12 +53,12 @@ function getFunction(){
     }
     COUNT++;
 }
-//$("#value4").attr("", true);
+
 
 
 function process(value)
 {
-   selectedValue=value.innerText
+   selectedValue=value.innerText;
     console.log(selectedValue);
     let ans = sessionStorage.getItem("ans");
     if(ans==selectedValue)
