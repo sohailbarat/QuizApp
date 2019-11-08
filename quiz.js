@@ -1,4 +1,7 @@
+//Globlal variable
 let COUNT=1;
+
+//Main function
 $(function(){
     getJSON();
     result();
@@ -6,6 +9,8 @@ $(function(){
     sessionStorage.setItem("mark",mark);
     startTimer();
   })
+
+//Result function
  function result()
  {
     let marksession=sessionStorage.getItem("mark");
@@ -13,6 +18,8 @@ $(function(){
     console.log(mark1)
     $("#result").text(mark1);
  }
+
+//function to get data from json file
  function getJSON(){
          $.getJSON("ques-db.json",function(json){
           array=json;    
@@ -20,6 +27,8 @@ $(function(){
          getFunction();
     });
 }
+
+//function to print question
 function getFunction(){
 
     if(COUNT<=9)
@@ -54,8 +63,7 @@ function getFunction(){
     COUNT++;
 }
 
-
-
+//function check answers 
 function process(value)
 {
    selectedValue=value.innerText;
@@ -78,31 +86,39 @@ function process(value)
     
 }
 
-function startTimer() {
+//function to set timer
+function startTimer() 
+{
     var time_in_minutes = 5;
     var current_time = Date.parse(new Date());
     var deadline = new Date(current_time + time_in_minutes*60*1000);
     function time_remaining(endtime){
-        var t = Date.parse(endtime) - Date.parse(new Date());
-        var seconds = Math.floor( (t/1000) % 60 );
-        var minutes = Math.floor( (t/1000/60) % 60 );
-        var hours = Math.floor( (t/(1000*60*60)) % 24 );
-        var days = Math.floor( t/(1000*60*60*24) );
-        return {'total':t, 'days':days, 'hours':hours, 'minutes':minutes, 'seconds':seconds};
-    }
-    function run_clock(id,endtime){
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var seconds = Math.floor( (t/1000) % 60 );
+    var minutes = Math.floor( (t/1000/60) % 60 );
+    var hours = Math.floor( (t/(1000*60*60)) % 24 );
+    var days = Math.floor( t/(1000*60*60*24) );
+    return {'total':t, 'days':days, 'hours':hours, 'minutes':minutes, 'seconds':seconds};
+}
+
+//function to run timer
+function run_clock(id,endtime)
+{
         var clock = document.getElementById('timer');
-        function update_clock(){
+        function update_clock()
+        {
             var t = time_remaining(endtime);
             document.getElementById("timer").innerHTML=t.minutes+':'+t.seconds;
-            if(t.total<=0){
+
+            if(t.total<=0)
+            {
                 clearInterval(timeinterval);
                 location.replace("index2.html");
-             }
+                }
+            }
+            update_clock();
+            var timeinterval = setInterval(update_clock,1000);
         }
-        update_clock();
-        var timeinterval = setInterval(update_clock,1000);
-    }
         run_clock('timer',deadline);
 }
   
