@@ -1,4 +1,4 @@
-# CanvasGame
+# QuizApp
 
 Simple Quiz Application using HTML,CSS,javaScript,jquery,Bootstrap.
 
