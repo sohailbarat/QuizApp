@@ -3,40 +3,42 @@
       --color-2:4B4B71; 
       --color-3:white;
   }
-  .body{
+  .body
+  {
       margin: 0px;
       padding: 0px;
   }
   .timer
   {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
   #name,#Result
  {
-    font-size: 3rem;
-    color: white;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin: 12;
+      font-size: 3rem;
+      color: white;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin: 12;
  }
  .Startbtn
  {
-   background-color: var(--color-2);
-   border-radius: 20px;
-   width: 180px;
-   height: 45px;
-   font-family: Roboto;
-   color:var(--color-3);
-   font-size: 25px;
-   outline: none;
+      background-color: var(--color-2);
+      border-radius: 20px;
+      width: 180px;
+      height: 45px;
+      font-family: Roboto;
+      color:var(--color-3);
+      font-size: 25px;
+      outline: none;
 
  }
- .Startbtn:hover {
-   background-color: var(--color-1);
+ .Startbtn:hover
+ {
+      background-color: var(--color-1);
  }
  .col-sm.r 
  {
@@ -49,18 +51,19 @@
      display: flex;
      height: 100vh;
  }
-.row{
-   height: 100vh;
+.row
+{
+     height: 100vh;
 }
 #link,#image
 {
-   justify-content: center;
-   align-items: center;
-   display: flex;
-   margin: 15;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin: 15;
 }
 .col-sm.r2
- {
+{
      margin: 0;
      padding: 0;
      background-color: var(--color-3);
@@ -68,33 +71,33 @@
      align-items: center;
      display: flex;
      height: 100vh;
- }
+}
 p
 {
-   display: contents;
+     display: contents;
 }
 #instr
 {
-   color: var(--color-3);
-   font-size: 2rem;
-   display: flex;
+      color: var(--color-3);
+      font-size: 2rem;
+      display: flex;
 }
 #InstructionsHead
 {
-   color:var(--color-3);
-   font-size: 3rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-bottom: 35;
+      color:var(--color-3);
+      font-size: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 35;
 
 }
 .btn
 {
-     width: 250;
-     height: 40;
-     left: 50.27px;
-     justify-content: center;
+      width: 250;
+      height: 40;
+      left: 50.27px;
+      justify-content: center;
       align-content: center;
       display: flex;
       border: 1px solid #3E8BD5;
@@ -102,29 +105,30 @@ p
       border-radius: 20px;
       margin: 10;
 }
-.btn:hover {
-   background-color: var(--color-1) ;
-   color: var(--color-3);
-   text-decoration: none;
- }
+.btn:hover 
+{
+      background-color: var(--color-1) ;
+      color: var(--color-3);
+      text-decoration: none;
+}
 .option1
 {
-   justify-content: center;
-   align-items: center;
-   display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;
 }
 .InstructionDiv
 {
-   margin-bottom: 40;
+      margin-bottom: 40;
 }
 #que
 {
-   font-size: 30;
+      font-size: 30;
 }
 #QuestionNo
 {
-   font-size: 20;
-   justify-content: center;
-   align-items: center;
-   display: flex;
+      font-size: 20;
+      justify-content: center;
+      align-items: center;
+      display: flex;
 }

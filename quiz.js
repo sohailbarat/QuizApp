@@ -1,4 +1,4 @@
-let COUNT=0;
+let COUNT=1;
 $(function(){
     getJSON();
     result();
