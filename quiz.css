@@ -27,6 +27,7 @@
    font-family: Roboto;
    color:var(--color-3);
    font-size: 25px;
+   outline: none;
 
  }
  .Startbtn:hover {
