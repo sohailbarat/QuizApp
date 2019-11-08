@@ -104,18 +104,21 @@ p
       box-sizing: border-box;
       border-radius: 20px;
       margin: 10;
+      outline: none;
 }
 .btn:hover 
 {
       background-color: var(--color-1) ;
       color: var(--color-3);
       text-decoration: none;
+      outline: none;
 }
 .option1
 {
       justify-content: center;
       align-items: center;
       display: flex;
+      outline: none;
 }
 .InstructionDiv
 {

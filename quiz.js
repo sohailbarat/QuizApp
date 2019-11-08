@@ -1,8 +1,11 @@
 //Globlal variable
 let COUNT=1;
+let array;
 
 //Main function
-$(function(){
+$(document).ready(function()
+{
+    console.log("fun called")
     getJSON();
     result();
     let mark=0; 
@@ -20,37 +23,43 @@ $(function(){
  }
 
 //function to get data from json file
- function getJSON(){
-         $.getJSON("ques-db.json",function(json){
-          array=json;    
-         console.log(array);
-         getFunction();
-    });
+ function getJSON()
+ {
+         $.getJSON("ques-db.json",function(json)
+         {
+            array=json;    
+            console.log("data came")
+            console.log(array);
+            getFunction();
+         });
 }
 
 //function to print question
-function getFunction(){
-
-    if(COUNT<=9)
+function getFunction()
+{
+    if(COUNT<=10)
     {
         const keys = Object.values(array);
-        console.log(array);
-        let randIndex = Math.floor(Math.round(Math.random()*10));
+        let randIndex = Math.floor(Math.round(Math.random()*6));
         console.log(randIndex);
         if(randIndex == null)
         {
-            randIndex=1;
+            randIndex = 1;
+
         }
-        console.log(randIndex);
-        let value = keys[randIndex];
-        $("#queno").text(COUNT);
-        $("#que").text(keys[randIndex].question);
-        $("#value1").text(value["options"][0]);
-        $("#value2").text(value["options"][1]);
-        $("#value3").text(value["options"][2]);
-        $("#value4").text(value["options"][3]);
-        sessionStorage.setItem("que",keys[randIndex].question);
-        sessionStorage.setItem("ans",keys[randIndex].answer);
+        
+        else
+        {
+            let value = keys[randIndex];
+            $("#queno").text(COUNT);
+            $("#que").text(keys[randIndex].question);
+            $("#value1").text(value["options"][0]);
+            $("#value2").text(value["options"][1]);
+            $("#value3").text(value["options"][2]);
+            $("#value4").text(value["options"][3]);
+            sessionStorage.setItem("que",keys[randIndex].question);
+            sessionStorage.setItem("ans",keys[randIndex].answer);
+        }
     }
     else
     {
@@ -66,7 +75,7 @@ function getFunction(){
 //function check answers 
 function process(value)
 {
-   selectedValue=value.innerText;
+    selectedValue=value.innerText;
     console.log(selectedValue);
     let ans = sessionStorage.getItem("ans");
     if(ans==selectedValue)
