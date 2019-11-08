@@ -47,7 +47,6 @@ function getFunction()
             randIndex = 1;
 
         }
-        
         else
         {
             let value = keys[randIndex];
