@@ -1,22 +1,12 @@
 # QuizApp
-
-Simple Quiz Application using HTML,CSS,javaScript,jquery,Bootstrap.
+This Application is developed using html,css,javascript. It shows weather question and its options.This application using HTML,CSS,javaScript,Bootstrap.
 
 ## Application Name
 Skill Mania
 
-## Author:
-
-[Aadesh Nichite](https://github.com/AadeshNichite)
-
-
 ## Technology Used:
 
 HTML,Canvas, CSS, JavaScript, Bootstrap
-
-## Objective:
-
-Create a Quiz Application
 
 ## Visit:
 [QuizApp]( https://aadeshnichite.github.io/QuizApp/)
