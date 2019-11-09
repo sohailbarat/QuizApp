@@ -28,8 +28,6 @@ $(document).ready(function()
          $.getJSON("ques-db.json",function(json)
          {
             array=json;    
-            console.log("data came")
-            console.log(array);
             getFunction();
          });
 }
@@ -41,13 +39,11 @@ function getFunction()
     {
         const keys = Object.values(array);
         let randIndex = Math.floor(Math.round(Math.random()*6));
-        console.log(randIndex);
         if(randIndex == null)
         {
             randIndex = 1;
 
         }
-
         else
         {
             let value = keys[randIndex];
@@ -77,21 +73,18 @@ function process(value)
 {
    // document.getElementsByClassName("btn").style.o = "none";
     selectedValue=value.innerText;
-    console.log(selectedValue);
     let ans = sessionStorage.getItem("ans");
     if(ans==selectedValue)
     {
-        console.log("Right answer");
         let mark=sessionStorage.getItem("mark");
         let mark1=parseInt(mark, 10);
         mark1++;
-        //console.log(mark1);
         sessionStorage.setItem("mark",mark1);   
     }
-    else
-    {
-        console.log("wrong answer");   
-    }
+//     else
+//     {
+//         console.log("wrong answer");   
+//     }
     getFunction();
     
 }
