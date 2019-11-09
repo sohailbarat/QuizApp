@@ -47,6 +47,7 @@ function getFunction()
             randIndex = 1;
 
         }
+
         else
         {
             let value = keys[randIndex];
@@ -74,6 +75,7 @@ function getFunction()
 //function check answers 
 function process(value)
 {
+   // document.getElementsByClassName("btn").style.o = "none";
     selectedValue=value.innerText;
     console.log(selectedValue);
     let ans = sessionStorage.getItem("ans");
